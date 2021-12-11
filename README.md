@@ -2,20 +2,29 @@
 
 ## Overview of the Analysis
 
-I was asked to create various Supervised Machine Learning Models to predict credit risk. I used 6 different methods to evaluate the risk.
+I was asked to use various Supervised Machine Learning Models to predict credit risk using a dataset from LendingClub, a peer-to-peer lending services company. I used  4 methods over 6 different models to predict credit risk. 
+
+#### Oversampling Methods
   - Random Oversampler
   - SMOTE
+#### Undersampling Method
   - Cluster Centroids
+#### Combination Over/Undersampling Method
   - SMOTEENN
+#### Machine Learning Models
   - Balanced Random Forest Classifier
   - Easy Ensemble Classifier
+
 
 ## Results
 
 ### Random Oversampler
+The first model I used was the Random Oversampler model. The balanced accuracy score, as seen in the image below is about 65%. The high risk precision is about 1% and the sensitivity (or recall) is about 62%. With those 2 stats, the F1 score is 2% for the high risk population, a very low number, which means there is a pronounced imbalance between precision and sensivity. 
+
 ![RandomOverSampler.png](https://github.com/melaniekelsey/Credit_Risk_Analysis/blob/main/images/RandomOverSampler.png)
 
 ### SMOTE Oversampler
+The second model I used was the SMOTE Oversampler model. The balanced accuracy score was the same as the Random Oversampler at 65%, with the same high risk precision and sensitvity numbers/ 
 ![SMOTEOversampler.png](https://github.com/melaniekelsey/Credit_Risk_Analysis/blob/main/images/SMOTEOversampler.png)
 
 ### Cluster Centroids
@@ -24,8 +33,10 @@ I was asked to create various Supervised Machine Learning Models to predict cred
 ### SMOTEENN
 ![SMOTEENN.png](https://github.com/melaniekelsey/Credit_Risk_Analysis/blob/main/images/SMOTEENN.png)
 
+### Balanced Random Forest Classifier
 ![BalancedRandomForestClassifier.png](https://github.com/melaniekelsey/Credit_Risk_Analysis/blob/main/images/BalancedRandomForestClassifier.png)
 
+### Easy Ensemble Classifier
 ![EasyEnsembleClassifier.png](https://github.com/melaniekelsey/Credit_Risk_Analysis/blob/main/images/EasyEnsembleClassifier.png)
 ## Summary
 
